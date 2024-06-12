@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const incidentForm = document.getElementById('incidentForm');
+    const incidentForm = document.getElementById('incident-form');
     const incidentList = document.querySelector('.incidents-list');
 
     let incidents = [];
@@ -55,8 +55,17 @@ document.addEventListener('DOMContentLoaded', () => {
         incidentForm.reset();
     });
 
+ 
+
     loadIncidents();
 });
+
+/*  <button onclick="deleteIncident(${index})">Delete</button>
+   window.deleteIncident = (index) => {
+    incidents.splice(index, 1);
+    saveIncidents();
+    renderIncidents();
+}; */
 
 
 

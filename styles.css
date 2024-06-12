@@ -16,10 +16,7 @@ header {
     color: #f4f4f4;
     text-align: center;
     padding: 1em 0;
-}
-
-h1 {
-    font-size: 40px;
+    margin-top: 1.25rem;
 }
 
 main {
@@ -34,6 +31,7 @@ h2 {
     border-bottom: 2px solid #4CAF50;
     padding-bottom: 0.5em;
     margin-bottom: 1rem;
+    font-size: 20px;
 }
 
 form {
@@ -70,6 +68,7 @@ button {
     padding: 12px;
     font-size: 20px;
     margin: 0.75rem 0 2rem;
+    cursor: pointer;
 }
 
 button:active,
@@ -83,14 +82,28 @@ button:hover {
 
 .incident {
     border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+    padding: 10px;
     background: #fff;
     margin: 10px 0;
     border-left: 5px solid #4CAF50;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+} 
+
+/* .incident button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    width: fit-content;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
 }
 
-.incident:last-child {
-    border-bottom: none;
-}
-
+.incident button:hover {
+    opacity: 0.8;
+} */
